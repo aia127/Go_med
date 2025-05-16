@@ -5,13 +5,11 @@ import websockets
 import os
 import json
 
-async def echo(websocket):  # Removed 'path' parameter as it's no longer needed in newer websockets versions
+async def echo(websocket):
     try:
         async for message in websocket:
             print("Received message:", message, flush=True)
-            
-            # Echo the message back
-            await websocket.send(message)
+            await websocket.send("Bitch sup")
             await websocket.send("[END]")
     except websockets.exceptions.ConnectionClosed:
         print("Client disconnected", flush=True)

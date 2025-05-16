@@ -19,9 +19,8 @@ export const Overview = () => {
           <MessageCircle size={44}/>
         </p>
         <p>
-          Welcome to <strong>chatbot-ui</strong><br />
-          a open source template made by<br />
-          <strong>Leon Binder</strong> and <strong>Christoph Handschuh</strong>.
+Welcome to a chatbot that listens to your symptoms, creates a detailed report for your doctor, and ensures you're truly heard. It recommends the right specialist and books your appointment in seconds          <br />
+          <strong>Where your symptoms meet the right care</strong><br />
         </p>
       </div>
     </motion.div>
